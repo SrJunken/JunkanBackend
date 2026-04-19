@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("frontend", policy =>
-        policy.WithOrigins("http://localhost:5173", "https://junkanlibrary-vercel.vercel.app/")
+        policy.WithOrigins("http://localhost:5173", "https://junkanlibrary-vercel.vercel.app")
               .AllowAnyHeader()
               .AllowAnyMethod()
     );
